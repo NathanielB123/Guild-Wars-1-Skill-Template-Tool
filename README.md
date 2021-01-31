@@ -10,4 +10,4 @@ supported creation of builds through simply typing in skill/attribute names whic
 "Monster Drafting" challenge runs.
 
 Because of that latter use, I have also added functionality to "Draw Monster"s. This selects an NPC from a random pool using all NPCs in campaign missions listed 
-on the wiki. I have currently only added NPCs for the Prophecies campaign but will add more sson.
+on the wiki. I have currently only added NPCs for the Prophecies campaign but will add more soon.
