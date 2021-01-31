@@ -8,3 +8,6 @@ There is no way I would have been able to create this without the help of the in
 There are a couple more advanced GUI-based tools out there that fit the same purpose, but I personally could not find any that they were open source and/or
 supported creation of builds through simply typing in skill/attribute names which is very useful for quickly copying monster builds from the wikif for 
 "Monster Drafting" challenge runs.
+
+Because of that latter use, I have also added functionality to "Draw Monster"s. This selects an NPC from a random pool using all NPCs in campaign missions listed 
+on the wiki. I have currently only added NPCs for the Prophecies campaign but will add more soon.
