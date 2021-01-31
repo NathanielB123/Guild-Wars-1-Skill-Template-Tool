@@ -98,10 +98,16 @@ so it should be quite simple to look them up and then create the skill template 
         Campaign = PROPHECIES
     elif Input in ("Factions", "F"):
         Campaign = FACTIONS
+        print("Only prophecies for now, sorry!")
+        return
     elif Input in ("Nightfall", "N"):
         Campaign = NIGHTFALL
+        print("Only prophecies for now, sorry!")
+        return
     elif Input in ("All", "A"):
         Campaign = ALL
+        print("Only prophecies for now, sorry!")
+        return
     else:
         raise Exception("!!!")
     while True:
@@ -400,7 +406,7 @@ while True:
     elif Type == "New" or Type == "N":
         print(WriteBuild())
     elif Type == "Draw" or Type == "D":
-        print(DrawMonster())
+        DrawMonster()
     elif Type == "Exit" or Type == "E":
         break
     elif Type == "H" or Type == "Hax":
