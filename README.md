@@ -9,5 +9,5 @@ There are a couple more advanced GUI-based tools out there that fit the same pur
 supported creation of builds through simply typing in skill/attribute names which is very useful for quickly copying monster builds from the wiki for 
 "Monster Drafting" challenge runs.
 
-To make monster drafting more convenient, I have also added functionality to "Draw Monster"s. This selects an NPC from a random pool using all NPCs in cooperative missions listed 
+To make monster drafting more convenient, I have also added functionality to "Draw Monster"s. This selects an NPC from a random pool using (nearly) all NPCs in cooperative missions listed 
 on the wiki.
