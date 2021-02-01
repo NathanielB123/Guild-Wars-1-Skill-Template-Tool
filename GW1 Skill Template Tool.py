@@ -10,7 +10,7 @@ PROPHECIES = "P"
 FACTIONS = "F"
 NIGHTFALL = "N"
 EOTN = "E"
-ALL = "A"
+ALL = "Al"
 
 NPCs = {'Jora': ('Allies', 'Norn', 'Warrior', 20, 20), 'Sif Shadowhunter': ('Allies', 'Norn', 'Ranger', 20, 20), 'Arctic Wolf': ('Foes', 'Beasts', 'Warrior', 20, 26), 'Stonewolf': ('Foes', 'Beasts', 'Warrior', 20, 26), 'Jotun Skullsmasher': ('Foes', 'Giants', 'Warrior', 28, 30), 'Jotun Bloodcurdler': ('Foes', 'Giants', 'Necromancer', 28, 30), 'Jotun Bladeturner': ('Foes', 'Giants', 'Mesmer', 28, 30), 'Jotun Mindbreaker': ('Foes', 'Giants', 'Mesmer', 28, 30), 'Mandragor Scavenger': ('Foes', 'Mandragors', 'Ranger', 20, 26), 'Ulcerous Mandragor': ('Foes', 'Mandragors', 'Necromancer', 20, 26), 'Dreamroot Mandragor': ('Foes', 'Mandragors', 'Mesmer', 20, 26), 'Mystic Mandragor': ('Foes', 'Mandragors', 'Dervish', 20, 26), 'Olaf Olafson': ('Allies', 'Norn', 'Warrior', 20, 20), 'Bear Spirit': ('Allies', '', 'Mesmer', 20, 26), 'Egil Fireteller': ('Allies', '', 'Paragon', 20, 20), 'Charr Axemaster': ('Foes', 'Charr', 'WarriorElementalist', 20, 26), 'Charr Blademaster': ('Foes', 'Charr', 'WarriorElementalist', 20, 26), 'Charr Bladestorm': ('Foes', 'Charr', 'WarriorElementalist', 20, 26), 'Charr Seeker': ('Foes', 'Charr', 'RangerElementalist', 20, 26), 'Charr Prophet': ('Foes', 'Charr', 'MonkMesmer', 20, 26), 'Charr Mender': ('Foes', 'Charr', 'MonkParagon', 20, 26), 'Charr Hexreaper': ('Foes', 'Charr', 'NecromancerRitualist', 20, 26), 'Charr Dominator': ('Foes', 'Charr', 'MesmerMonk', 20, 26), 'Charr Wardkeeper': ('Foes', 'Charr', 'Elementalist', 20, 26), 'Charr Flameshielder': ('Foes', 'Charr', 'ElementalistMonk', 20, 26), 'Charr Avenger': ('Foes', 'Charr', 'Ritualist', 20, 26), 'Frozen Elemental': ('Foes', 'Elementals', 'Elementalist', 24, 26), 'Avalanche': ('Foes', 'Elementals', 'Elementalist', 28, 30), 'Tenagg Flametroller': ('Bosses', 'Charr', 'Warrior', 24, 30), 'Docu Kindleshot': ('Bosses', 'Charr', 'Ranger', 24, 30), 'Elmohr Snowmender': ('Bosses', 'Charr', 'Monk', 24, 30), 'Kakei Stormcaller': ('Bosses', 'Charr', 'Elementalist', 24, 30), 'Charr Firereigner': ('Foes', 'Charr', 'ElementalistMonk', 20, 26), 'Mandragor Dust Devil': ('Foes', 'Mandragor', 'Ranger', 24, 26), 'Mandragor Smoke Devil': ('Foes', 'Mandragor', 'Ranger', 24, 26), 'Vile Mandragor': ('Foes', 'Mandragor', 'Necromancer', 24, 26), 'Mandragor Shadowfang': ('Foes', 'Mandragor', 'Assassin', 24, 26), 'Mantid Queen': ('Foes', 'Mantis', 'Monk', 20, 26), 'Mantid Nymph': ('Foes', 'Mantis', 'Mesmer', 20, 26), 'Mantid Digger': ('Foes', 'Mantis', 'Dervish', 20, 26), 'Swampwater Skale': ('Foes', 'Skale', 'Elementalist', 24, 26), 'Deadly Skale': ('Foes', 'Skale', 'Assassin', 24, 26), 'Skale Lasher': ('Foes', 'Skale', 'Dervish', 24, 26), 'Gordam Griefgiver': ('Bosses', 'Charr', 'Warrior', 24, 30), 'Groknar Weazlewortz': ('Bosses', 'Charr', 'Ranger', 24, 30), 'Harvest Soulreign': ('Bosses', 'Charr', 'Necromancer', 24, 30), 'Anmat the Trickster': ('Bosses', 'Charr', 'Mesmer', 24, 30), 'Frazar Frostfur': ('Bosses', 'Charr', 'Elementalist', 24, 30), 'Needling Lavastrider': ('Foes', 'Arachnids (level 2)', 'Ranger', 20, 24), 'Spider': ('Foes', 'Arachnids (level 2)', 'Ranger', 14, 24), 'Venomweaver': ('Foes', 'Arachnids (level 2)', 'Ranger', 24, 26), 'Bloodweaver': ('Foes', 'Arachnids (level 2)', 'Paragon', 24, 26), 'Jadam Spearspinner': ('Bosses', 'Arachnids', 'Paragon', 28, 30), 'Charr Prison Guard': ('Bosses', 'Charr', 'Warrior', 24, 30), 'Flamemaster Maultooth': ('Bosses', 'Charr', 'Elementalist', 28, 30), 'Bonwor Fierceblade': ('Allies', 'Charr', 'Warrior', 20, 20), 'Roan Fierceheart': ('Allies', 'Charr', 'MonkMesmer', 20, 20), 'Cowl Fiercetongue': ('Allies', 'Charr', 'ElementalistMonk', 20, 20), 'Gron Fierceclaw': ('Allies', 'Charr', 'Assassin', 20, 20), 'Seer Fiercereign': ('Allies', 'Charr', 'Ritualist', 20, 20), 'Armored Saurus': ('Allies', 'Dinosaurs', 'Elementalist', 28, 28), 'Elite Charr Guard': ('Foes', 'Charr', 'WarriorElementalist', 20, 26), 'Destroyer of Bones': ('Foes', 'Destroyers', 'Warrior', 28, 30), 'Destroyer of Sinew': ('Foes', 'Destroyers', 'Warrior', 24, 26), 'Destroyer of Deeds': ('Foes', 'Destroyers', 'Ranger', 24, 26), 'Destroyer of Hordes': ('Foes', 'Destroyers', 'Ranger', 28, 30), 'Destroyer of Hope': ('Foes', 'Destroyers', 'Necromancer', 28, 30), 'Destroyer of Thoughts': ('Foes', 'Destroyers', 'Mesmer', 28, 30), 'Hierophant Burntsoul': ('Bosses', 'Charr', 'ElementalistMonk', 24, 30)}
 CAMPAIGN = "C"
@@ -24,34 +24,27 @@ ENEMY = "E"
 BOSS = "B"
 
 def DrawMonster():
-    print("Here you can draw random GW1 NPCs")
-    print("""I have not personally entered all of their builds into this app, but you will be given their name and the wiki page,
+    print("Here you can draw random GW1 NPCs.")
+    print("""I have not personally entered all of their builds into this app, but you will be given their name, the wiki page and some basic info,
 so it should be quite simple to look them up and then create the skill template using this tool.""")
     Input = ""
-    while Input not in ("Y", "N"):
-        print("Enable Bosses ('Yes'/'Y' Or 'No'/'N')?")
+    while Input not in ("Ally", "A", "Foe", "F", "Boss", "B", "All"):
+        print("What Type? ('Ally'/'A', 'Foe'/'F', 'Boss'/'B', Or 'All')")
         Input = input()
-    if Input in ("Yes", "Y"):
-        Bosses = True
-    elif Input in ("No", "N"):
-        Bosses = False
-    else:
-        raise Exception("!!!")
-
-    Input = ""
-    while Input not in ("Y", "N"):
-        print("Enable Allies ('Yes'/'Y' Or 'No'/'N')?")
-        Input = input()
-    if Input in ("Yes", "Y"):
-        Allies = True
-    elif Input in ("No", "N"):
-        Allies = False
+    if Input in ("Ally", "A"):
+        Type = ALLY
+    elif Input in ("Foe", "F"):
+        Type = ENEMY
+    elif Input in ("Boss", "B"):
+        Type = BOSS
+    elif Input in ("All"):
+        Type = ALL
     else:
         raise Exception("!!!")
     
     Input = ""
     while Input not in ("Prophecies", "P", "Factions", "F", "Nightfall", "N", "EOTN", "E", "All", "A"):
-        print("Which Campaign? ('Prophecies'/'P', 'Factions'/'F', 'Nightfall'/'N', 'EOTN'/'N' Or 'All'/'A')")
+        print("Which Campaign? ('Prophecies'/'P', 'Factions'/'F', 'Nightfall'/'N', 'EOTN'/'N' Or 'All/'A'')")
         Input = input()
     if Input in ("Prophecies", "P"):
         Campaign = PROPHECIES
@@ -65,6 +58,7 @@ so it should be quite simple to look them up and then create the skill template 
         Campaign = ALL
     else:
         raise Exception("!!!")
+    
     while True:
         print("Enter 'Draw'/'D' to Draw, Enter 'Back'/'B' to go back:")
         Input = input()
@@ -74,11 +68,15 @@ so it should be quite simple to look them up and then create the skill template 
             else:
                 TempCampaign = Campaign
             Choice = None
-            while Choice is None or (TempCampaign not in StoredNPCs[Choice][CAMPAIGN]) or (
-                not Bosses and StoredNPCs[Choice][TYPE]==BOSS) or (not Allies and StoredNPCs[Choice][TYPE]==ALLY):
+            while Choice is None or (TempCampaign not in StoredNPCs[Choice][CAMPAIGN]) or not (Type==ALL or StoredNPCs[Choice][TYPE]==Type):
                 Choice = choice(list(StoredNPCs.keys()))
             print(Choice)
-            print("Wiki Page: https://wiki.guildwars.com/wiki/"+Choice+"    (May rarely be incorrect)")
+            print("Wiki Page: https://wiki.guildwars.com/wiki/"+Choice)
+            print("Primary Profession: "+ProfessionDict.inv[StoredNPCs[Choice][PRIMARY]]+
+            "\nSecondary Profession: "+ProfessionDict.inv[StoredNPCs[Choice][SECONDARY]])
+            print("Level: "+str(StoredNPCs[Choice][LEVEL])+" ("+str(StoredNPCs[Choice][HARD_MODE_LEVEL])+")")
+            print("Type: "+("Foe" if  StoredNPCs[Choice][TYPE]==ENEMY else "Boss" if  StoredNPCs[Choice][TYPE]==BOSS else "Ally")) #+ " - "+StoredNPCs[Choice][SECONDARY_TYPE]) Secondary types are not always useful (often relate to mechanics rather than affliction) so I have commented it out for now
+            print("")
         elif Input in ("Back", "B"):
             return
 
