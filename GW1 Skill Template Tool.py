@@ -1,5 +1,6 @@
 from random import choice
 from Data import ProfessionDict, ProfessionDict, DualProfessions, Base64Dict, AttributeDict, SkillDict, StoredNPCs
+import webbrowser
 
 PRIMARY="Pr"
 SECONDARY="Se"
@@ -71,12 +72,17 @@ so it should be quite simple to look them up and then create the skill template 
             while Choice is None or (TempCampaign not in StoredNPCs[Choice][CAMPAIGN]) or not (Type==ALL or StoredNPCs[Choice][TYPE]==Type):
                 Choice = choice(list(StoredNPCs.keys()))
             print(Choice)
-            print("Wiki Page: https://wiki.guildwars.com/wiki/"+Choice)
             print("Primary Profession: "+ProfessionDict.inv[StoredNPCs[Choice][PRIMARY]]+
             "\nSecondary Profession: "+ProfessionDict.inv[StoredNPCs[Choice][SECONDARY]])
             print("Level: "+str(StoredNPCs[Choice][LEVEL])+" ("+str(StoredNPCs[Choice][HARD_MODE_LEVEL])+")")
             print("Type: "+("Foe" if  StoredNPCs[Choice][TYPE]==ENEMY else "Boss" if  StoredNPCs[Choice][TYPE]==BOSS else "Ally")) #+ " - "+StoredNPCs[Choice][SECONDARY_TYPE]) Secondary types are not always useful (often relate to mechanics rather than affliction) so I have commented it out for now
+            print("Campaign(s): "+("Prophecies " if PROPHECIES in StoredNPCs[Choice][CAMPAIGN] else "") +
+                  ("Factions " if FACTIONS in StoredNPCs[Choice][CAMPAIGN] else "") +
+                  ("Nightfall " if NIGHTFALL in StoredNPCs[Choice][CAMPAIGN] else "") +
+                  ("EOTN " if EOTN in StoredNPCs[Choice][CAMPAIGN] else ""))
+            print("Wiki Page: https://wiki.guildwars.com/wiki/"+Choice.replace(" ", "_"))
             print("")
+            webbrowser.open("https://wiki.guildwars.com/wiki/"+Choice.replace(" ", "_"))
         elif Input in ("Back", "B"):
             return
 
