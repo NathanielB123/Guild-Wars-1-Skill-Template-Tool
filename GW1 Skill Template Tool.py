@@ -27,8 +27,8 @@ BOSS = "B"
 
 def DrawMonster():
     print("Here you can draw random GW1 NPCs.")
-    print("""I have not personally entered all of their builds into this app, but you will be given their name, the wiki page and some basic info,
-so it should be quite simple to look them up and then create the skill template using this tool.""")
+    print("""I have not personally entered all of their skills but you will be given their wiki page which includes that info,
+so it should be quite simple to then create the skill template using this tool.""")
     Input = ""
     while Input not in ("Ally", "A", "Foe", "F", "Boss", "B", "All"):
         print("What Type? ('Ally'/'A', 'Foe'/'F', 'Boss'/'B', Or 'All')")
