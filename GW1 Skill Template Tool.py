@@ -1,6 +1,8 @@
 from random import choice
 from Data import ProfessionDict, ProfessionDict, DualProfessions, Base64Dict, AttributeDict, SkillDict, StoredNPCs
 import webbrowser
+import json
+from urllib.request import urlopen
 
 PRIMARY="Pr"
 SECONDARY="Se"
@@ -27,8 +29,9 @@ BOSS = "B"
 
 def DrawMonster():
     print("Here you can draw random GW1 NPCs.")
-    print("""I have not personally entered all of their skills but you will be given their wiki page which includes that info,
-so it should be quite simple to then create the skill template using this tool.""")
+    print("""Please note that a lot of features here are very much WIP - in the end I hope to have an immersive(tm) GUI showing an image
+of the NPC drawn and their skills, skill tooltips and build.""")
+    print("There is a lot of work yet to do, right now I am focussing on getting all the information I need from the wiki.")
     Input = ""
     while Input not in ("Ally", "A", "Foe", "F", "Boss", "B", "All"):
         print("What Type? ('Ally'/'A', 'Foe'/'F', 'Boss'/'B', Or 'All')")
@@ -82,8 +85,31 @@ so it should be quite simple to then create the skill template using this tool."
                   ("Nightfall " if NIGHTFALL in StoredNPCs[Choice][CAMPAIGN] else "") +
                   ("EOTN " if EOTN in StoredNPCs[Choice][CAMPAIGN] else ""))
             print("Wiki Page: https://wiki.guildwars.com/wiki/"+Choice.replace(" ", "_"))
+            #Create build
+            try:
+                url = "https://wiki.guildwars.com/api.php?action=parse&format=json&page="+Choice.replace(" ", "_")
+                page = urlopen(url)
+                html = page.read().decode("utf-8")
+                JSON = json.loads(html)
+                Data = {PRIMARY: 0,
+                SECONDARY: 0,
+                ATTRIBUTES: dict(),
+                SKILLS: []}
+                
+                for link in JSON["parse"]["links"]:
+                    if link["*"] in SkillDict.keys() and len(Data[SKILLS])<8:
+                        Data[SKILLS].append(SkillDict[link["*"]])
+                    elif link["*"] in ProfessionDict.keys():
+                        Data[PRIMARY] = ProfessionDict[link["*"]]
+                while len(Data[SKILLS])<8:
+                    Data[SKILLS].append(0)
+                print("Build code: "+BitsToBase64(DataToBits(Data)))
+            except:
+                print("Build creation failed")
+            
             print("")
-            webbrowser.open("https://wiki.guildwars.com/wiki/"+Choice.replace(" ", "_"))
+            #open wiki
+            #webbrowser.open("https://wiki.guildwars.com/wiki/"+Choice.replace(" ", "_"))
         elif Input in ("Back", "B"):
             return
 
