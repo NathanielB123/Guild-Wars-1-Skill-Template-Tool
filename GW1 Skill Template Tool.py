@@ -24,8 +24,7 @@ ALL = "All"
 
 def DrawMonster():
     print("Here you can draw random GW1 NPCs.")
-    print("""Please note that a lot of features here are very much WIP - in the end I hope to have an immersive(tm) GUI showing an image of the NPC drawn and their skills, skill tooltips and build.""")
-    print("There is a lot of work yet to do, right now I am focussing on getting all the information I need from the wiki.")
+    print("Please note that a lot of features here are very much WIP")
     
     Input = ""
     FirstLetters = list(map(lambda each: each[0], Campaigns))
